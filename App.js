@@ -11,6 +11,8 @@ import {
   Text,
 } from 'react-native';
 
+export const sum = (a, b) => a + b;
+
 const App = () =>  {
 
   return (
