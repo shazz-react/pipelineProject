@@ -12,5 +12,5 @@ it('renders correctly', () => {
 });
 
 it('calculate', () => {
-  expect(sum(1, 1)).toBe(3)
+  expect(sum(1, 1)).toBe(2)
 })
