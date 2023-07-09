@@ -6,20 +6,29 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  Text,
-} from 'react-native';
+import {SafeAreaView, Text} from 'react-native';
+import Button from './components/button';
 
 export const sum = (a, b) => a + b;
 
-const App = () =>  {
-
+const App = () => {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: 'white'}}>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
       <Text>Welcome</Text>
+      <Button
+        title="Login"
+        onPress={() => {
+          console.log('Login clicked');
+        }}
+      />
     </SafeAreaView>
   );
-}
+};
 
 export default App;
